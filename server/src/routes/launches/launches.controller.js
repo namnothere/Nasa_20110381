@@ -26,7 +26,7 @@ function httpAbortLaunch(req, res) {
   const launchId = Number(req.params.id);
 
   if (!existsLaunch(launchId)) {
-    return req.status(404).json({
+    return res.status(404).json({
       error: 'Launch not found'
     })
   }
