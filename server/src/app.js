@@ -4,6 +4,7 @@ const launchRouter = require('./routes/launches/launches.router');
 const cors = require('cors');
 const path = require('path');
 const morgan = require('morgan');
+require('dotenv').config('../.env');
 
 const app = express();
 app.use(express.json());

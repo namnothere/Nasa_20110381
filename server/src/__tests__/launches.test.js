@@ -23,7 +23,6 @@ describe('GET /launches', function() {
             });
       });
 });
-  
 
 describe('POST /launches', function() {
     it('responds with json with status code 201', function(done) {
